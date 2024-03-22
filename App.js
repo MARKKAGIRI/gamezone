@@ -1,6 +1,6 @@
 import { useFonts } from 'expo-font'
 import { Text } from 'react-native';
-import Navigator from './routes/homeStack'
+import RootDrawerNavigator from './routes/homeStack'
 import {NavigationContainer} from '@react-navigation/native'
 
 
@@ -11,7 +11,7 @@ export default function App() {
   if (fontLoad){
     return(
       <NavigationContainer>
-        <Navigator />
+        <RootDrawerNavigator />
       </NavigationContainer>
       
     );
